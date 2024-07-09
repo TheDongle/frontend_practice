@@ -10,18 +10,16 @@
 
 <body>
   <header>
+    <h1 class="visuallyhidden">Welcome to Pettube</h1>
 
-    <a id="branding" href="/">
-      <h1>
-        Youtube
-      </h1>
-      <i title="logo" class="fa-brands fa-youtube"></i>
-    </a>
-
-    <button id="toggler">
-      <i class="fa-solid fa-bars row-1"></i>
-      Toggle View
+    <button class="button-naked" aria-hidden="true" id="sidebar-toggler">
+      <i class="fa-solid fa-bars"></i>
     </button>
+
+    <a id="branding" href="/index.html">
+      <i aria-hidden="true" class="fa-solid fa-film"></i>
+      &nbsp;PetTube
+    </a>
 
     <a id="skipper" href="#main" class="skip">Skip to main content</a>
 
@@ -29,23 +27,129 @@
       <form action="./search/">
         <label for="search" class="visuallyhidden">Search: </label>
         <input placeholder="search" type="text" id="search" name="search" />
-        <button><i class="fa-solid fa-microphone"></i></button>
         <button type="submit"><i title="submit" class="fa-solid fa-magnifying-glass"></i></button>
+        <button><i class="fa-solid fa-microphone"></i></button>
       </form>
     </search>
 
-    <button id="settings">
-      <span class="visuallyhidden">Settings</span>
-      <i class="fa-solid fa-ellipsis-vertical"></i>
+    <button class="button-naked" id="settings">
+      <i title="settings" class="fa-solid fa-ellipsis-vertical"></i>
     </button>
 
-    <button id="signin">
+    <a href="#" id="signin">
       <i aria-hidden="true" class="fa-solid fa-user"></i>
-      Sign in
-    </button>
+      &nbsp;Sign In
+    </a>
+  </header>
 
-    <!-- row 2 -->
 
+  <!-- <nav id="sidebar">
+    <h2 class="visuallyhidden">Navigation</h2>
+
+    <menu class="sidebar-togglable">
+      <li>
+        <a href="/index.html">
+          <i aria-hidden="true" class="fa-solid fa-house"></i>
+          <p>Home</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-paw"></i>
+          <p>Pets</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-shield-cat"></i>
+          <p>Insurance</p>
+        </a>
+      </li>
+    </menu>
+
+    <menu class="sidebar-togglable">
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-person"></i>
+          <p>You</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-clock-rotate-left"></i>
+          History
+        </a>
+      </li>
+    </menu>
+
+    <h3 class="sidebar-hideable">Explore</h3>
+
+    <menu class="sidebar-hideable">
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-dog"></i>
+          Dogs
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-cat"></i>
+          Cats
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-horse-head"></i>
+          Horses
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-fish"></i>
+          Fish
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-crow"></i>
+          Birds
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-frog"></i>
+          Frogs
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-spider"></i>
+          Spiders
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-cow"></i>
+          Cows
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-hippo"></i>
+          Hippos
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i aria-hidden="true" class="fa-solid fa-dragon"></i>
+          Dragons
+        </a>
+      </li>
+    </menu>
+  </nav> -->
+
+  <!-- <nav id="tagbar">
+    <h2 class="visuallyhidden">Popular Tags</h2>
     <menu id="taglist">
       <li class="tag"><a href="#">tag</a></li>
       <li class="tag"><a href="#">tag</a></li>
@@ -56,12 +160,17 @@
       <li class="tag"><a href="#">tag</a></li>
       <li class="tag"><a href="#">tag</a></li>
       <li class="tag"><a href="#">tag</a></li>
+      <li class="tag"><a href="#">tag</a></li>
+      <li class="tag"><a href="#">tag</a></li>
+      <li class="tag"><a href="#">tag</a></li>
+      <li class="tag"><a href="#">tag</a></li>
+      <li class="tag"><a href="#">tag</a></li>
     </menu>
-  </header>
+  </nav> -->
 
-  <!-- row 3 -->
 
   <main id="main">
+    <h2 class="visuallyhidden">Videos</h2>
     <a href="">
       Video 1
     </a>
